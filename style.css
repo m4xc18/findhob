@@ -1,0 +1,116 @@
+.cat,.abt{
+  color: white;
+}
+
+.cat:hover,.abt:hover{
+  color: red;
+}
+
+.navbar img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #822720;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px #021656;
+  transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #822720;
+  border: 1px solid #822720;
+  box-shadow: 5px 5px 3px #822720;
+}
+
+.btn:active{
+  background-color: #822720;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+#nabar { 
+  background: linear-gradient(100deg, #021656, #822720);
+}
+
+#findhob {
+  margin-top: 50px;
+  color: #822720;
+}
+
+.hero {
+  background: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+  
+lead {
+  color: #021656;
+}
+    
+body {
+  background: linear-gradient(100deg, #021656, #822720);
+}
+ 
+h2 {
+  margin-top: 25px;
+}
+
+.hobby-card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.hobby-card {
+  padding: 5px ;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 400px;
+  padding: 5px;
+  margin: .25px;
+  transform: perspective(1000px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(15deg);
+}
+
+#findabout {
+  color: #822720;
+}
+
+#pmodal {
+ text-align: justify;
+}
+
+.modal-links {
+  display: flex;
+  gap: 75px;
+  justify-content: center;
+}
+
+.modal-links a {
+  text-decoration: none;
+  color: #822720;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #021656;
+}

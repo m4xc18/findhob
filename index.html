@@ -1,0 +1,758 @@
+<!-- MA. ANGELICA C. CANDIDO BSIT - 2A -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FindHob: Discover New Hobbies</title>
+  <link rel="icon" type="image" href="pics/fh-icon.png">
+  <!-- online bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- offline bootstrap cdn -->
+  <!--
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- navbar section -->
+  <nav class="navbar navbar-light fixed-top" id="nabar">
+    <div class="container">
+      <div class="brand ms-3">
+        <a href="#"><img src="pics/fh-icon.png" alt="FindHob Logo" href="#"></a>
+        <a class="navbar-brand fw-bold text-light" href="#">FindHob</a>
+      </div>
+      <ul class="nav">
+        <li class="nav-item dropdown dropdown-toggle-menu">
+          <a class="nav-link cat" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#arts-crafts">Arts & Crafts</a></li>
+            <li><a class="dropdown-item" href="#sports-fitness">Sports & Fitness</a></li>
+            <li><a class="dropdown-item" href="#tech">Technology</a></li>
+            <li><a class="dropdown-item" href="#music-dance">Music & Dance</a></li>
+            <li><a class="dropdown-item" href="#out-act">Outdoor Activities</a></li>
+            <li><a class="dropdown-item" href="#food-cooking">Food & Cooking</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link abt" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold" id="findhob">FindHob</h1>
+      <p class="lead">Discover new hobbies that inspire, excite, and enrich your life!</p>
+      <a href="#hobbies" class="btn mt-3">Explore Hobbies</a>
+    </div>
+  </section>
+
+  <!-- hobbies section -->
+  <section id="hobbies" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 text-light" id="arts-crafts">Arts & Crafts</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/photography.png" class="card-img-top" alt="Photography">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Photography</h5>
+              <p class="card-text">Capture life's beautiful moments through the lens.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal1">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/painting.png" class="card-img-top" alt="Painting">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Painting</h5>
+              <p class="card-text">Express yourself with colors and creativity.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal2">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/calligraphy.png" class="card-img-top" alt="Calligraphy">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Calligraphy</h5>
+              <p class="card-text">Transform words into timeless works of art with every stroke.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal3">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  <!-- sports & fitness -->
+      <h2 class="text-center fw-bold mb-4 text-light" id="sports-fitness">Sports & Fitness</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/cycling.png" class="card-img-top" alt="Cycling">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cycling</h5>
+              <p class="card-text">Embrace the journey, feel the freedom, and explore the world on two wheels.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal4">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/yoga.png" class="card-img-top" alt="Painting">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Yoga</h5>
+              <p class="card-text">Find balance, cultivate strength, and embrace serenity through mindful movement.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal5">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/running.png" class="card-img-top" alt="Running">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Running</h5>
+              <p class="card-text">Chase your goals, feel the rhythm, and discover the power within every stride.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal6">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!-- technology -->
+      <h2 class="text-center fw-bold mb-4 text-light" id="tech">Technology</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/programming.png" class="card-img-top" alt="Programming">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Programming</h5>
+              <p class="card-text">Turn ideas into reality, solve problems, and create the future one line of code at a time.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal7">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/robotics.png" class="card-img-top" alt="Robotics">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Robotics</h5>
+              <p class="card-text">Bring innovation to life by building machines that think, move, and inspire.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal8">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/videogame.png" class="card-img-top" alt="Video Gaming">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Video Gaming</h5>
+              <p class="card-text">Immerse yourself in new worlds, conquer challenges, and unleash your creativity.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal9">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- music & dance -->
+      <h2 class="text-center fw-bold mb-4 text-light" id="music-dance">Music & Dance</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/songwriting.png" class="card-img-top" alt="Songwriting">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Songwriting</h5>
+              <p class="card-text">Craft stories, express emotions, and bring melodies to life through your words.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal10">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/playinstru.png" class="card-img-top" alt="Playing Instruments">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Playing Instruments</h5>
+              <p class="card-text">Create harmony, express your soul, and bring music to life with every note.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal11">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/dancing.png" class="card-img-top" alt="Dancing">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dancing</h5>
+              <p class="card-text">Express yourself, feel the rhythm, and tell stories through movement and grace.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal12">Learn More</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!-- outdoor activities -->
+      <h2 class="text-center fw-bold mb-4 text-light" id="out-act">Outdoor Activities</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/gardening.png" class="card-img-top" alt="Gardening">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Gardening</h5>
+              <p class="card-text">Cultivate beauty, nurture life, and find peace in every bloom and leaf.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal13">Learn More</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/stargazing.png" class="card-img-top" alt="Stargazing">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Stargazing</h5>
+              <p class="card-text">Explore the wonders of the universe and connect with the infinite beauty of the night sky.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal14">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/camping.png" class="card-img-top" alt="Camping">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Camping</h5>
+              <p class="card-text">Escape the ordinary, embrace the wilderness, and create memories under the stars.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal15">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- food & cooking -->
+      <h2 class="text-center fw-bold mb-4 text-light" id="food-cooking">Food & Cooking</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/reshop.png" class="card-img-top" alt="Restaurant Hopping">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Restaurant Hopping</h5>
+              <p class="card-text">Savor diverse flavors, discover hidden culinary gems, and indulge in every bite.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal16">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/cooking.png" class="card-img-top" alt="Cooking">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cooking</h5>
+              <p class="card-text">Unleash creativity, blend flavors, and turn simple ingredients into heartfelt meals.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal17">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card hobby-card h-100 d-flex flex-column">
+            <img src="pics/baking.png" class="card-img-top" alt="Baking">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Baking</h5>
+              <p class="card-text">Measure, mix, and craft delicious creations that warm the soul and delight the senses.</p>
+              <div class="mt-auto">
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal18">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- modals -->
+    <!-- modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Photography</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/photography.png" class="img-fluid mb-3" alt="Photography">
+            </div>
+            <hr>
+            <p id="pmodal">Photography is an art of capturing light to create memories. Explore techniques like portrait, landscape, or wildlife photography.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.instructables.com/Starting-Photography-a-Beginners-Guide/" target="_blank">How to Start</a>
+              <a href="https://www.adobe.com/creativecloud/photography/discover/types-of-photography.html" target="_blank">Styles & Genres</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Painting</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/painting.png" class="img-fluid mb-3" alt="Painting">
+            </div>
+            <hr>
+            <p id="pmodal">Painting is an art of expressing emotions through colors and strokes. Explore styles like portrait painting, abstract art, or landscape creations to bring your imagination to life.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://drawpaintacademy.com/painting-for-beginners/">How to Start</a>
+              <a href="https://altenew.com/pages/the-a-to-z-of-painting-styles-techniques-and-movements">Styles & Techniques</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Calligraphy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/calligraphy.png" class="img-fluid mb-3" alt="Calligraphy">
+            </div>
+            <hr>
+            <p id="pmodal">Calligraphy is the art of beautiful handwriting, combining elegance and precision. Discover techniques like modern script, gothic lettering, or brush calligraphy to craft timeless designs.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://calligrascape.com/learn-calligraphy/">How to Start</a>
+              <a href="https://whatiscalligraphy.com/styles-of-calligraphy/">Styles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cycling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/cycling.png" class="img-fluid mb-3" alt="Cycling">
+            </div>
+            <hr>
+            <p id="pmodal">Cycling is an exhilarating activity that blends fitness with adventure. Explore road cycling, mountain biking, or leisurely rides to boost endurance and connect with nature.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.bicycling.com/training/a20027599/beginner-road-bike-tips/">How to Start</a>
+              <a href="https://www.outsideonline.com/1812476/top-11-cycling-technique-tips">Technique & Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- modal 5 -->
+    <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Yoga</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/yoga.png" class="img-fluid mb-3" alt="Yoga">
+            </div>
+            <hr>
+            <p id="pmodal">Yoga is the art of harmonizing mind, body, and soul. Practice styles like Hatha, Vinyasa, or Ashtanga yoga to enhance flexibility, reduce stress, and promote inner peace.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://bookretreats.com/blog/how-to-start-yoga/">How to Start</a>
+              <a href="https://www.verywellfit.com/essential-yoga-poses-for-beginners-3566747">Yoga Poses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- modal 6 -->
+    <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Running</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/running.png" class="img-fluid mb-3" alt="Running">
+            </div>
+            <hr>
+            <p id="pmodal">Running is a powerful way to improve fitness and mental clarity. Embrace sprinting, long-distance running, or trail running to challenge yourself and achieve your goals.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.rei.com/learn/expert-advice/running-basics.html">How to Start</a>
+              <a href="https://therunexperience.com/good-running-form-for-beginners-head-to-toe-technique/">Running Techniques</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- modal 7 -->
+    <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Programming</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/programming.png" class="img-fluid mb-3" alt="Programming">
+            </div>
+            <hr>
+            <p id="pmodal">Programming is the art of creating solutions through code. Explore languages like Python, Java, or C++ to build websites, apps, and innovative software.</p>
+            <div class="modal-links">
+              <a href="https://www.geeksforgeeks.org/how-to-learn-programming/">How to Start</a>
+              <a href="https://dev.to/codewithshahan/10-critical-tips-to-learn-programming-language-fast-quickly-easily-ej3">Tips & Tricks</a>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+      <!-- modal 8 -->
+    <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Robotics</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/robotics.png" class="img-fluid mb-3" alt="Robotics">
+            </div>
+            <hr>
+            <p id="pmodal">Robotics is the fusion of engineering and creativity to design intelligent machines. Dive into automation, AI integration, or humanoid robots to shape the future.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://robotsguide.com/learn/how-to-get-started-in-robotics">How to Start</a>
+              <a href="https://diy-robotics.com/topics/tips-and-tricks/">Tips & Tricks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- modal 9 -->
+    <div class="modal fade" id="modal9" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Video Gaming</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/videogame.png" class="img-fluid mb-3" alt="Video Gaming">
+            </div>
+            <hr>
+            <p id="pmodal">Video gaming is an immersive blend of entertainment and strategy. Explore genres like action, role-playing, or simulation to challenge your skills and experience new worlds.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://voice123.com/blog/video-games/how-to-make-a-video-game/">How to Start</a>
+              <a href="https://medium.com/@chadlantistv/how-to-improve-in-any-video-game-7d0efe5ed053">Tips to Get Better</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- modal 10 -->
+    <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Songwriting</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center">
+                <img src="pics/songwriting.png" class="img-fluid mb-3" alt="Songwriting">
+              </div>
+              <hr>
+              <p id="pmodal">Songwriting is the art of telling stories through melody and lyrics. Explore styles like pop, rock, or folk to express emotions and connect with your audience.</p>
+              <hr>
+              <div class="modal-links">
+                <a href="https://dittomusic.com/en/blog/how-to-write-a-song-10-tips-on-how-to-boost-your-creative-side-when-writing-songs">How to Start</a>
+                <a href="https://blog.landr.com/10-songwriting-techniques/">Techniques</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- modal 11 -->
+    <div class="modal fade" id="modal11" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Playing Instruments</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/playinstru.png" class="img-fluid mb-3" alt="Playing Instruments">
+            </div>
+            <hr>
+            <p id="pmodal">Playing instruments is a journey of creating harmony through sound. Master the piano, guitar, or drums to bring music to life and inspire others.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.wikihow.com/Learn-to-Play-an-Instrument">How to Start</a>
+              <a href="https://whisperroom.com/tips/how-to-quickly-learn-a-new-instrument/">Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+      <!-- modal 12 -->
+    <div class="modal fade" id="modal12" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Dancing</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/dancing.png" class="img-fluid mb-3" alt="Dancing">
+            </div>
+            <hr>
+            <p id="pmodal">Dancing is the art of expressing emotions through movement and rhythm. Explore styles like ballet, hip-hop, or salsa to connect with music and showcase your passion.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.steezy.co/posts/how-to-start-dancing">How to Start</a>
+              <a href="https://www.dancefacts.net/dance-types/types-of-dances/">Styles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+      <!-- modal 13 -->
+    <div class="modal fade" id="modal13" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Gardening</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/gardening.png" class="img-fluid mb-3" alt="Gardening">
+            </div>
+            <hr>
+            <p id="pmodal"></p>Gardening is the art of nurturing life and creating beauty with plants. Explore flower gardening, vegetable cultivation, or landscape design to bring nature closer to home.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.forbes.com/home-improvement/lawn-care/how-to-start-a-garden/">How to Start</a>
+              <a href="https://www.bhg.com/gardening/yard/garden-care/gardening-tips-for-every-gardener/">Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- modal 14 -->
+    <div class="modal fade" id="modal14" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Stargazing</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/stargazing.png" class="img-fluid mb-3" alt="Stargazing">
+            </div>
+            <hr>
+            <p id="pmodal">Stargazing is the practice of exploring the night sky's wonders. Discover constellations, planets, or distant galaxies to connect with the universe's vastness.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.thrillist.com/news/nation/astronomy-for-beginners-how-to-start-stargazing">How to Start</a>
+              <a href="https://www.skyatnightmagazine.com/advice/skills/stargazing-top-tips">Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- modal 15 -->
+    <div class="modal fade" id="modal15" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Camping</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/camping.png" class="img-fluid mb-3" alt="Camping">
+            </div>
+            <hr>
+            <p id="pmodal">Camping is an adventure that brings you closer to nature. Embrace tent camping, RV trips, or backpacking to experience the outdoors and create lasting memories.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://koa.com/blog/a-beginners-guide-to-camping-for-the-first-time/">How to Start</a>
+              <a href="https://www.wellplannedjourney.com/camping-tips-for-beginners/">Useful Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- modal 16 -->
+    <div class="modal fade" id="modal16" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Restaurant Hopping</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/reshop.png" class="img-fluid mb-3" alt="Restaurant Hopping">
+            </div>
+            <hr>
+            <p id="pmodal">Restaurant hopping is a culinary adventure, exploring diverse flavors and atmospheres. Discover hidden gems, trendy eateries, or local favorites to satisfy your taste buds.</p>
+            <hr>
+            <div class="modal-links">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- modal 17 -->
+    <div class="modal fade" id="modal17" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cooking</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/cooking.png" class="img-fluid mb-3" alt="Cooking">
+            </div>
+            <hr>
+            <p id="pmodal">Cooking is the art of transforming ingredients into delicious meals. Experiment with cuisines, techniques, and flavors to create dishes that bring people together.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.escoffier.edu/blog/value-of-culinary-education/learning-how-to-cook-a-guide-for-beginners/">How to Start</a>
+              <a href="https://www.johnsoulesfoods.com/blog/cooking-tips-for-beginners/">Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- modal 18 -->
+    <div class="modal fade" id="modal18" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Baking</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <img src="pics/baking.png" class="img-fluid mb-3" alt="Baking">
+            </div>
+            <hr>
+            <p id="pmodal">Baking is a craft that blends precision and creativity. Master cakes, pastries, or bread to fill your home with warmth and the aroma of fresh-baked treats.</p>
+            <hr>
+            <div class="modal-links">
+              <a href="https://www.bakerssecret.com/blogs/food-articles/the-beginner-s-guide-to-baking-from-scratch">How to Start</a>
+              <a href="https://grandbaby-cakes.com/baking-tips-for-beginners/">Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- about section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="®">
+     <div class="glass-card">
+      <h3 class="text-center fw-bold">About Us</h2>
+      <p class="text-center text-muted justify-align-center">
+        <span id="findabout">FindHob</span> is your gateway to discovering hobbies that align with your interests. Whether you’re looking for a creative outlet, a physical challenge, or something just for fun, we’ve got you covered.
+      </p>
+     </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="py-4 text-light text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 FindHob. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

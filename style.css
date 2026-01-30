@@ -4,6 +4,7 @@
 
 .cat:hover,.abt:hover{
   color: red;
+  cursor: pointer;
 }
 
 .navbar img {
